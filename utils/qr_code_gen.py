@@ -5,7 +5,7 @@ from pyqrcode import QRCode
 
 
 # String which represents the QR code
-s = "https://9377106c8d47ce4013.gradio.live/"
+s = "<placeholder>"
 
 # Generate QR code
 url = pyqrcode.create(s)
