@@ -56,3 +56,13 @@ async def inpaint_img_func(request: Request):
     image.save(byte_space, "png")
     return Response(content=byte_space.getvalue(),
                     media_type="image/png")
+
+# # uncomment this in colab
+# import nest_asyncio
+# from pyngrok import ngrok
+# import uvicorn
+# ngrok.set_auth_token("2iNsGhWfDRuFD2HQtN5N0MnE3HP_2vYXmk3mZXk1AogR7KJrK")
+# ngrok_tunnel = ngrok.connect(8000)
+# print('Public URL:', ngrok_tunnel.public_url)
+# nest_asyncio.apply()
+# uvicorn.run(app, port=8000)
